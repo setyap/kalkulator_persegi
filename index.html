@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Persegi</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <!-- <a href="#" class="navbar-logo">Anthe<span>Phiphi</span>.</a> -->
+    <a href="#" class="navbar-logo">Kalkulator <span>Persegi</span></a>
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- About Section start -->
+  <section class="about" id="about">
+    <div class="row">
+      <div class="about-img">
+        <img src="img/persegi.jpg"  />
+      </div>
+      <div class="content">
+        <div class="menu">
+          <button class="btn" id="btn_luas">Luas</button>
+          <button class="btn" id="btn_keliling">Keliling</button>
+        </div>
+
+        <div class="keterangan">
+          <div class="card" id="luas_card" style="display: none;">
+            <h1>Luas Persegi</h1>
+            <div class="rumus">
+              <p>L = S x S</p>
+              <p>S = Sisi</p>
+            </div>
+
+            <div class="form">
+              <div class="input-group">
+                <label for="sisiluas_Input">Sisi</label>
+                <input type="number" placeholder="Sisi" id="sisiluas_Input"/>
+              </div>
+              <div class="btn_hitung">
+                <button class="btn" id="btn_hitung_luas">Hitung</button>
+                <button class="btn" onclick="reset()">Reset</button>
+              </div>
+            </div>
+            <div class="jawabanluas" id="jawaban_luas" style="display: none;">
+              <p>L = S x S</p>
+              <p>L = <span id="sisiluas1">1</span> x <span id="sisiluas2">1</span></p>
+              <p>L = <span id="hasilluas1">1</span></p>
+              <p>Luas Persegi Dengan Sisi <span id="sisiluas3">1</span> Adalah <span id="hasilluas2">1</span></p>
+            </div>
+          </div>
+
+          <div class="card" id="keliling_card" style="display: none;">
+            <h1>Keliling Persegi</h1>
+            <div class="rumus">
+              <p>K = 4 x S</p>
+              <p>S = Sisi</p>
+            </div>
+
+            <div class="form">
+              <div class="input-group">
+                <label for="sisikeliling_Input">Sisi</label>
+                <input type="number" placeholder="Sisi" id="sisikeliling_Input"/>
+              </div>
+              <div class="btn_hitung">
+                <button class="btn" id="btn_hitung_keliling">Hitung</button>
+                <button class="btn" onclick="reset()">Reset</button>
+              </div>
+            </div>
+            <div class="jawabankeliling" id="jawaban_keliling" style="display: none;">
+              <p>K = 4 x S</p>
+              <p>K = 4 x <span id="sisikeliling2">1</span></p>
+              <p>K = <span id="hasilkeliling1">1</span></p>
+              <p>Keliling Persegi Dengan Sisi <span id="sisikeliling3">4</span> Adalah <span id="hasilkeliling2">1</span></p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- About Section end -->
+
+  <!-- My Javascript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
